@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anonymous">以本地帳號登入</string>
+    <string name="bind">連結帳號</string>
+    <string name="email">郵箱</string>
+    <string name="email_input_code_hint">請輸入驗證碼</string>
+    <string name="email_input_hint">請輸入郵箱地址</string>
+    <string name="facebook">Facebook</string>
+    <string name="get_code">獲取驗證碼</string>
+    <string name="get_code_after_seconds">%d秒後獲取驗證碼</string>
+    <string name="googlePlay">Google Play</string>
+    <string name="googlePlayGames">Google Play Games</string>
+    <string name="login">登入</string>
+    <string name="loginFailed">登入出現錯誤，請稍後重試或聯絡客服。</string>
+    <string name="switchAccount">切換帳號</string>
+    <string name="t4f_sdk_file_server_choose_album">相冊選擇</string>
+    <string name="t4f_sdk_file_server_choose_camera">相機選擇</string>
+    <string name="t4f_sdk_file_server_title_clip_image">移動和縮放</string>
+    <string name="t4f_str_cancel">取消</string>
+    <string name="t4f_str_push_permission_request_msg">%1s希望發送推送消息</string>
+    <string name="t4f_str_request_permission">通知</string>
+    <string name="t4f_str_sure">好的</string>
+    <string name="tgs_audio_permission_request">我們將使用麥克風權限為您提供語音聊天功能</string>
+    <string name="tgs_email_login_or_register">郵箱登錄/註冊</string>
+    <string name="tgs_get_code_fail">驗證碼發送失敗(%s)</string>
+    <string name="tgs_get_code_success">驗證碼發送成功</string>
+    <string name="tgs_switch_account">切換帳戶</string>
+</resources>

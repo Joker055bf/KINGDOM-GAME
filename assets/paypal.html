@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    <style type="text/css">
+      iframe{
+        border: none;
+      }
+    </style>
+  </head>
+
+<body>
+  <!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=ATOsCDhsv1BkHAnD69yirWsAMnsRQSs_wwTQTzBAlAgT5KBJDyObCspRvYjw68dFjFdXp_GaKpx3JxfU&currency=USD"></script> -->
+<!-- Set up a container element for the button -->
+<div id="paypal-button-container"></div>
+
+<script>
+
+  function printLog(msg,debug=undefined){
+     console.log(null!=msg?msg:"")
+     if(debug=="true"){
+        alert(null!=msg?msg:"")
+     }
+  }
+
+  function buyItem(orderDetail){
+    var clientId=orderDetail["clientId"]
+    var debugEnable=orderDetail["debug"]
+    var currencyCode=orderDetail["priceCurrency"]
+    if(!clientId){
+       printLog("Client id 为空",debugEnable)
+       return
+    }else if(!currencyCode){
+      printLog("CurrencyCode 为空",debugEnable)
+      return
+    }
+    printLog("Prepare native paypal buy item.currency="+currencyCode,debugEnable)
+    // launchBuy(orderDetail,debugEnable)
+    var script= document.createElement('script');
+    script.type= 'text/javascript';
+    script.onload = script.onreadystatechange = function() {
+        if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
+            script.onload = script.onreadystatechange = null;
+            launchBuy(orderDetail,debugEnable);
+        } };
+    script.src= "https://www.paypal.com/sdk/js?client-id="+clientId+"&currency="+currencyCode;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  function launchBuy(orderDetail,debugEnable=false){
+    var orderId=orderDetail["orderId"];
+    var price=orderDetail["price"];
+    var currencyCode=orderDetail["priceCurrency"]
+    if(!orderId){
+      printLog("Order id 为空",debugEnable)
+       return
+    }else if(!price||parseFloat(price)<=0){
+      printLog("Price 要大于0",debugEnable)
+       return
+    }else if(!currencyCode){
+      printLog("CurrencyCode 为空",debugEnable)
+      return
+    }
+    printLog("Paypal native buy item.price="+price,debugEnable)
+      paypal.Buttons({
+        onInit: function(data, actions)  {
+          // Disable the buttons
+          // actions.disable();
+          },
+      // Sets up the transaction when a payment button is clicked
+        createOrder: function(data, actions) {
+          // prompt("创建订单 createOrder "+orderId)
+          return orderId; 
+          // actions.order.create({
+          //   // intent:"CAPTURE",//CAPTURE AUTHORIZE
+          //   // description: orderDetail["description"],
+          //   // category: "PHYSICAL_GOODS",//DIGITAL_GOODS PHYSICAL_GOODS
+          //   purchase_units: [{
+          //       amount: {
+          //         value: price, // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+          //         currency_code: currencyCode
+          //       },
+          //       description: orderDetail["description"]
+          //     }]
+          //   });
+          },
+          // Finalize the transaction after payer approval
+        onApprove: function(data, actions) {
+            // prompt("onApprove  ")
+            return actions.order.capture().then(function(orderData) {
+                // Successful capture! For dev/demo purposes:解析这个orderData里面就有状态status，为COMPLETED即为成功
+                    // prompt("captured结束 "+status)
+                    var transaction = orderData.purchase_units[0].payments.captures[0];
+                    printLog('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details',debugEnable);
+                    var status=transaction.status;
+                    if(status=="COMPLETED"){
+                       window.android.onApproved(true,"",JSON.stringify(orderDetail),"");
+                       printLog("Captured "+"\n"+ transaction.id+"\n"+(status=="COMPLETED"),debugEnable);
+                    }else{
+                      printLog("Capture "+status+"\n"+ transaction.id+"\n"+(status=="COMPLETED"),debugEnable);
+                    }
+                // When ready to go live, remove the alert and show a success message within this page. For example:
+              // var element = document.getElementById('paypal-button-container');
+                // element.innerHTML = '';
+                // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                // Or go to another URL:  actions.redirect('thank_you.html');
+            });
+          },
+        onError: function(error){
+          window.android.onApproved(false,"Paypal native buy error."+error,JSON.stringify(orderDetail),"");
+        }, 
+        onCancel: function(data){
+          window.android.onApproved(false,"Paypal native buy canceled."+error,JSON.stringify(orderDetail),"");
+        },    
+        onClick: function(error){
+            //Do nothing
+        },  
+        }).render('#paypal-button-container');
+  }
+
+  // buyItem({
+  //   "price":"1",
+  //   "clientId": "ATOsCDhsv1BkHAnD69yirWsAMnsRQSs_wwTQTzBAlAgT5KBJDyObCspRvYjw68dFjFdXp_GaKpx3JxfU",
+  //   "secret":"EL0T-qtjA3BC2THSqAenD6jqxT-n8mCN1QaZfwCGbNs6h_5suXkSOfnfT2g06r6871qWqIPaRJ3EWGdr",
+  //   "orderId":"werwerwe",
+  //   "debug":"true",
+  //   "priceCurrency":"USD",
+  //   "productName":"演唱会门票",
+  //   "description":"这是一张演唱会门票",
+  //   "quantity":"1",
+  // });
+      // var ddd=window.android.getClient();
+      // alert(ddd)
+      // buyItem();
+    </script>
+</body>
+</html>

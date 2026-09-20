@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tgs.aics.thirdtool.ratingbar.BaseRatingBar android:layout_gravity="center_horizontal" android:id="@id/tgs_aics_rating_bar" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" app:srb_clearRatingEnabled="false" app:srb_minimumStars="1.0" app:srb_numStars="5" app:srb_rating="5.0" app:srb_starHeight="27.0dip" app:srb_starWidth="27.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ffc2c7cc" android:gravity="end" android:id="@id/tgs_aics_evaluate_worst_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tgs_aics_evaluate_very_bad" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="82.5dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffc2c7cc" android:id="@id/tgs_aics_evaluate_best_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tgs_aics_evaluate_very_good" android:layout_weight="1.0" android:paddingStart="82.5dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

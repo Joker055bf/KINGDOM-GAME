@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_height">24.0dip</dimen>
+    <dimen name="btn_height_port">22.0dip</dimen>
+    <dimen name="button_close_height">30.0dip</dimen>
+    <dimen name="button_close_width">24.0dip</dimen>
+    <dimen name="button_text_size">10.0sp</dimen>
+    <dimen name="err_text_size">10.0sp</dimen>
+    <dimen name="header_text_size_land">11.0sp</dimen>
+    <dimen name="icon_18_plus_height">18.0dip</dimen>
+    <dimen name="icon_term_size">14.0dip</dimen>
+    <dimen name="input_text_size">11.0sp</dimen>
+    <dimen name="input_text_size_land">11.0sp</dimen>
+    <dimen name="leftContent">200.0dip</dimen>
+    <dimen name="padding_large">14.0dip</dimen>
+    <dimen name="padding_normal">8.0dip</dimen>
+    <dimen name="padding_small">2.0dip</dimen>
+    <dimen name="padding_snormal">4.0dip</dimen>
+    <dimen name="padding_ssmall">1.0dip</dimen>
+    <dimen name="padding_xnormal">10.0dip</dimen>
+    <dimen name="rightContent">198.0dip</dimen>
+    <dimen name="term_text_size">9.0sp</dimen>
+    <dimen name="toast_corner">15.0dip</dimen>
+    <dimen name="toast_height">30.0dip</dimen>
+    <dimen name="toast_icon_size">20.0dip</dimen>
+    <dimen name="toast_padding">5.0dip</dimen>
+    <dimen name="toast_text_size">11.0sp</dimen>
+    <dimen name="ic18_text_size">7.0sp</dimen>
+</resources>

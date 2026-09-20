@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/tgs_aics_tips_dialog_bg_style" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/tgs_dialog_tips_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff7f7f7f" android:id="@id/tgs_dialog_tips_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tgs_dialog_tips_left_button" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/tgs_dialog_tips_button_divider" android:background="#ffbfbfbf" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff038cf4" android:id="@id/tgs_dialog_tips_right_button" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

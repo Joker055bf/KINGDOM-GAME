@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffafafa" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffebeff2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mDirButton" android:background="@null" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="180.0dip" android:text="" android:maxLines="1" android:singleLine="true" android:drawablePadding="4.0dip" android:layout_centerVertical="true" android:drawableEnd="@mipmap/picker_text_indicator" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/mPreview" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_centerVertical="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/mPreview" android:layout_toEndOf="@id/mDirButton">
+        <CheckBox android:textColor="@color/white_F5" android:gravity="center" android:layout_gravity="center" android:id="@id/mCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawablePadding="5.0dip" />
+    </FrameLayout>
+</RelativeLayout>

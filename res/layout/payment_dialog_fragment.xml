@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_header_pay" android:background="@color/funtap_color" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height">
+        <ImageButton android:id="@id/btn_close_pay" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:layout_centerInParent="true" android:paddingStart="@dimen/padding_normal" android:paddingEnd="@dimen/padding_normal" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAllCaps="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_content_pay" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/grid_view_pay" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_connection_lost" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="30.0sp" android:textColor="@color/err_text" android:id="@id/txt_reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_lost" />
+        <Button android:textColor="@color/white" android:id="@id/btn_reload" android:background="@color/btn_login_focused" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/reload" />
+    </LinearLayout>
+</LinearLayout>

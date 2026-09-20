@@ -1,0 +1,40 @@
+.class public final synthetic Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$$ExternalSyntheticLambda1;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$OnConflictResolved;
+
+.field public final synthetic f$1:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$OnConflictResolved;Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$$ExternalSyntheticLambda1;->f$0:Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$OnConflictResolved;
+
+    iput-object p2, p0, Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$$ExternalSyntheticLambda1;->f$1:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$$ExternalSyntheticLambda1;->f$0:Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$OnConflictResolved;
+
+    iget-object v1, p0, Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$$ExternalSyntheticLambda1;->f$1:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-static {v0, v1, p1, p2}, Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog;->lambda$showWithUnavailable$0(Lcom/t4f/sdkgplay/gamesservices/AccountConflictDialog$OnConflictResolved;Ljava/util/concurrent/atomic/AtomicBoolean;Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method

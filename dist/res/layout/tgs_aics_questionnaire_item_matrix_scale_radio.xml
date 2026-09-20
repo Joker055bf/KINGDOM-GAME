@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tgs_aics_questionnaire_item_matrix_scale_radio_desc_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/tgs_aics_questionnaire_item_matrix_scale_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

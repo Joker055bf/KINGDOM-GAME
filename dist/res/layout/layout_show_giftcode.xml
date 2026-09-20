@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="@drawable/background_giftcode_show" android:layout_width="300.0dip" android:layout_height="44.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="15.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/txt_giftcode" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <Button android:textSize="12.0dip" android:textColor="#fff14308" android:id="@id/btn_close_giftcode" android:background="@null" android:layout_width="35.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/button_giftcode_press" android:text="@string/close_giftcode" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:textAllCaps="false" />
+        <View android:id="@id/view_seperate" android:background="#ffb0b0b0" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/btn_close_giftcode" android:layout_centerInParent="true" />
+        <Button android:textSize="12.0dip" android:textColor="#fff14308" android:id="@id/btn_copy_giftcode" android:background="@null" android:layout_width="35.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/button_giftcode_press" android:text="@string/copy_giftcode" android:layout_toLeftOf="@id/view_seperate" android:layout_centerInParent="true" android:textAllCaps="false" />
+    </RelativeLayout>
+</LinearLayout>

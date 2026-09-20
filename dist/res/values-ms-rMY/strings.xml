@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t4f_sdk_file_server_choose_album">Pemilihan album</string>
+    <string name="t4f_sdk_file_server_choose_camera">Pemilihan kamera</string>
+    <string name="t4f_sdk_file_server_title_clip_image">Gerakkan dan zum</string>
+</resources>

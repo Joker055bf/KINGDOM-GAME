@@ -1,0 +1,20 @@
+version infomation:
+C:/Program Files/Unity/Hub/Editor/2022.3.62f2c1/Editor/Unity.exe : 
+-projectPath : 
+D:\k1/k1_client/client : 
+-quit : 
+-batchmode : 
+-executeMethod : 
+JenkinsAdapter.JenkinsBuildAndroidGPWithAAB : 
+Channel : 7
+Scripting_Define_Symbols : Gold;USE_ASSET_PACKS
+IsUploadCDN : false
+isUploadsSymbols : false
+is_local : false
+git_brach : qa
+version_code : 7608
+include_optional_videos : false
+is_build_res : true
+-logFile : 
+D:\k1\unity_logs\unity3d_build_aab_3772_ch7_7608.log : 
+jenkins_build_name : [1号]Android打包_3772

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/email_login_dialog_rootFL" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/tgs_k1d2_login_common_bg" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="350.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Space android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/email_login_dialog_titleTV" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <ImageView android:id="@id/email_login_dialog_close_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/tgs_k1d2_close" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ScrollView android:layout_gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/loginDialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                        <EditText android:textSize="12.0sp" android:textColorHint="#ff787a86" android:id="@id/t4f_email_et" android:background="@drawable/tgs_k1d2_input_style" android:paddingLeft="32.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_input_hint" android:singleLine="true" android:imeOptions="actionDone" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tgs_k1d2_icon_email_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+                        <Button android:layout_gravity="end|center" android:id="@id/t4f_clear_phone_no_btn" android:background="@drawable/tgs_icon_close" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_marginEnd="10.0dip" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <EditText android:textSize="12.0sp" android:textColorHint="#ff787a86" android:id="@id/t4f_email_code_et" android:background="@drawable/tgs_k1d2_input_style" android:paddingLeft="32.0dip" android:paddingTop="10.0dip" android:paddingRight="2.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_input_code_hint" android:maxLength="10" android:inputType="number" />
+                            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tgs_k1d2_icon_verify_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+                        </FrameLayout>
+                        <Button android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ff0f4798" android:layout_gravity="center" android:id="@id/t4f_get_email_code_btn" android:background="@drawable/tgs_k1d2_get_code_button_bg" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginBottom="4.0dip" android:text="@string/get_code" />
+                    </LinearLayout>
+                    <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff855e0a" android:layout_gravity="center_horizontal" android:id="@id/t4f_email_login_btn" android:background="@drawable/tgs_k1d2_button_bg" android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="15.0dip" android:text="@string/tgs_email_login_or_register" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+                    <Button android:textSize="12.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/t4f_back_to_login_page" android:background="@drawable/tgs_login_button_blue_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:text="@string/tgs_switch_account" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_home_root_layout" android:background="@color/tgs_aics_default_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/tgs_aics_base_layout" />
+    <include layout="@layout/tgs_aics_loading_layout" />
+    <include layout="@layout/tgs_aics_load_error_layout" />
+    <EditText android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff05101a" android:textColorHint="#ffa5acb4" android:id="@id/tgs_aics_home_search_text" android:background="@drawable/tgs_aics_search_input_style" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:hint="@string/tgs_aics_search" android:singleLine="true" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/tgs_aics_edit_cursor_shape" android:drawableEnd="@mipmap/tgs_aics_search" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/tgs_aics_white_translucent_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:onClick="openAiChatWindow" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff082235" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_service_progress" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tgs_aics_unread_message_count" android:background="@drawable/tgs_aics_unread_message_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99+" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_marginStart="5.0dip" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:background="@mipmap/tgs_aics_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@color/tgs_aics_white_translucent_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+                    <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff082235" android:id="@id/tgs_aics_self_service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.tgs.aics.widget.TypeGridView android:id="@id/tgs_aics_grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:listSelector="@android:color/transparent" android:verticalSpacing="10.0dip" android:numColumns="4" />
+                    <include android:id="@id/tgs_aics_self_service_empty_view_layout" layout="@layout/tgs_aics_empty_view" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/tgs_aics_white_translucent_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+                    <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff082235" android:id="@id/tgs_aics_important_attention_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.tgs.aics.widget.TypeListView android:id="@id/tgs_aics_list_view_important_attention" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="8.0dip" />
+                    <include android:id="@id/tgs_aics_important_attention_empty_view_layout" layout="@layout/tgs_aics_empty_view" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@android:color/transparent" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/tgs_aics_scrollview" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@color/tgs_aics_white_translucent_color" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff082235" android:id="@id/tgs_aics_help_center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+                    <include android:id="@id/tgs_aics_help_center_empty_view_layout" android:visibility="gone" layout="@layout/tgs_aics_empty_view" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_help_center_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:id="@id/tgs_aics_help_center_left_arrow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip">
+                                <ImageView android:background="@mipmap/tgs_aics_left_arrow_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <com.google.android.material.tabs.TabLayout android:id="@id/tgs_aics_tab_layout" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0" app:tabIndicator="@drawable/tgs_aics_tab_indicator_style" app:tabIndicatorColor="@android:color/transparent" app:tabMode="auto" app:tabSelectedTextColor="#ff0f2233" app:tabTextAppearance="@style/Tgs_TabLayoutTextStyle" app:tabTextColor="#ff899199" />
+                            <LinearLayout android:id="@id/tgs_aics_help_center_right_arrow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="20.0dip">
+                                <ImageView android:background="@mipmap/tgs_aics_right_arrow_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="#fff2f4f7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <com.tgs.aics.widget.TypeListView android:id="@id/tgs_aics_help_center_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/tgs_aics_pressed_selector" android:divider="#fff2f4f7" android:dividerHeight="1.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tgs_aics_third_text_size" android:textColor="@color/tgs_aics_main_text_color" android:layout_gravity="center" android:id="@id/tgs_aics_system_message_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="timestamp" />
+    <TextView android:textSize="@dimen/tgs_aics_third_text_size" android:textColor="@color/tgs_aics_main_text_color" android:layout_gravity="center" android:id="@id/tgs_aics_system_message_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="system message" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_permissions_linearLayout" android:background="@drawable/tgs_ad_permissions_view_bg" android:layout_width="404.0dip" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/t4f_icon_person" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="@string/tgs_ad_permission_title" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/ad_permissions_des_text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/tgs_ad_permission_desc" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/buttonAccept" android:background="@drawable/tgs_ad_permissions_button" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/tgs_ad_permission_accept" android:layout_centerHorizontal="true" />
+        <Button android:textSize="16.0sp" android:textColor="#ff3f3f3f" android:id="@id/buttonManage" android:background="@drawable/tgs_ad_permissions_button_gray" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/tgs_ad_permission_manage" android:layout_centerHorizontal="true" />
+        <Button android:textSize="16.0sp" android:textColor="#ff3f3f3f" android:id="@id/buttonRejectFirst" android:background="@drawable/tgs_ad_permissions_button_gray" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/tgs_ad_permission_reject" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</ScrollView>

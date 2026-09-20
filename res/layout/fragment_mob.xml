@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_main" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/layout_content" android:tag="fragment_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_back" android:background="@null" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="@dimen/header_bar_height" android:src="@drawable/ic_action_back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/blank" />
+        <ImageButton android:id="@id/btn_close" android:background="@null" android:layout_width="50.0dip" android:layout_height="@dimen/header_bar_height" android:src="@drawable/ic_action_cancel" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/blank" />
+        <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_alignParentTop="true" style="@style/MobProgressBar" />
+    </RelativeLayout>
+</RelativeLayout>

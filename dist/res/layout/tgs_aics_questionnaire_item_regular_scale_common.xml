@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="@color/normalBlack" android:id="@id/tgs_aics_regular_scale_worst_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="很不满意" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="@color/normalBlack" android:gravity="end" android:id="@id/tgs_aics_regular_scale_best_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="很满意" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd3d3d3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_regular_scale_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t4f_sdk_file_server_choose_album">From Album</string>
+    <string name="t4f_sdk_file_server_choose_camera">From Camera</string>
+    <string name="t4f_sdk_file_server_title_clip_image">Move and Zoom</string>
+    <string name="t4f_str_cancel">Cancel</string>
+    <string name="t4f_str_push_permission_request_msg">%1s would like to send push notifications</string>
+    <string name="t4f_str_request_permission">Request Permission</string>
+    <string name="t4f_str_sure">OK</string>
+    <string name="tgs_ad_permission_accept">ACCEPT</string>
+    <string name="tgs_ad_permission_analytics">Analytics Information</string>
+    <string name="tgs_ad_permission_desc">"We, our Affiliates and partners access and store data on your device to personalize, measure, and deliver content and ads, analyze use, and improve your experience.
+
+Tap Accept to allow this or go to Manage Preferences to make more choices.For more information, see our %s."</string>
+    <string name="tgs_ad_permission_encrypted">Encrypted in-game Data</string>
+    <string name="tgs_ad_permission_manage">MANAGE PREFERENCES</string>
+    <string name="tgs_ad_permission_necessary">"Necessary Information
+Always Active"</string>
+    <string name="tgs_ad_permission_personalized">Personalized Ads</string>
+    <string name="tgs_ad_permission_privacy">Privacy Policy</string>
+    <string name="tgs_ad_permission_reject">REJECT</string>
+    <string name="tgs_ad_permission_save">SAVE PREFERENCES</string>
+    <string name="tgs_ad_permission_title">We Value Your Privacy</string>
+    <string name="tgs_ad_permission_title2">Manage Your Preferences</string>
+    <string name="tgs_audio_permission_request">We will use the microphone permission to provide you with voice chat function</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_faq_recharge_query_root_layout" android:background="@color/tgs_aics_default_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_base_layout" />
+    <include layout="@layout/tgs_aics_loading_layout" />
+    <include layout="@layout/tgs_aics_load_error_layout" />
+    <ListView android:id="@id/tgs_aics_recharge_record_lv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

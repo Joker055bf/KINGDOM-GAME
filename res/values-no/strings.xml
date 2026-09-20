@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tgs_ad_permission_accept">AKSEPTER</string>
+    <string name="tgs_ad_permission_analytics">Analytisk informasjon</string>
+    <string name="tgs_ad_permission_desc">"Vi, våre datterselskaper og partnere, får tilgang til og lagrer informasjon på enheten din for å tilpasse innhold og annonser, måle og levere dem, analysere bruk og forbedre din opplevelse.
+
+Klikk Aksepter for å gi ditt samtykke, eller gå til Administrer preferanser for å velge flere alternativer. For mer informasjon, se vår %s."</string>
+    <string name="tgs_ad_permission_encrypted">Krypterte Spilldata</string>
+    <string name="tgs_ad_permission_manage">ADMINISTRER PREFERANSER</string>
+    <string name="tgs_ad_permission_necessary">"Nødvendig informasjon
+Alltid aktiv"</string>
+    <string name="tgs_ad_permission_personalized">Tilpasset Reklame</string>
+    <string name="tgs_ad_permission_privacy">Personvernpolicy</string>
+    <string name="tgs_ad_permission_reject">AVSLÅ</string>
+    <string name="tgs_ad_permission_save">LAGRE PREFERANSER</string>
+    <string name="tgs_ad_permission_title">Vi verdsetter ditt privatliv</string>
+    <string name="tgs_ad_permission_title2">Administrer dine preferanser</string>
+</resources>

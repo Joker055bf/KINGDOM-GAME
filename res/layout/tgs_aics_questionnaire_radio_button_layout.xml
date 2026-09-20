@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tgs_aics_options_radio_group_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/tgs_aics_options_radio_group_image" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <ImageView android:layout_gravity="end" android:id="@id/tgs_aics_options_radio_group_image_enlarge" android:background="@mipmap/tgs_aics_icon_enlarge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginEnd="15.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <RadioButton android:textColor="@color/normalBlack" android:id="@id/tgs_aics_options_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/tgs_aics_questionnaire_radio_selector" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:id="@id/tgs_aics_options_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tgs_aics_third_text_size" android:id="@id/tgs_aics_options_radio_button_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="40.0dip" android:layout_marginEnd="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tgs_aics_inner_question_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#fff5222d" android:gravity="center" android:id="@id/tgs_aics_is_must" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="*" android:layout_marginStart="10.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="5.0dip">
+            <EditText android:textSize="14.0sp" android:id="@id/tgs_aics_inner_question_edittext" android:background="@drawable/tgs_aics_questionnaire_options_shape" android:layout_width="fill_parent" android:layout_height="40.0dip" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/tgs_aics_custom_edittext_cursor_color" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <Spinner android:id="@id/tgs_aics_inner_question_spinner" android:background="@drawable/tgs_aics_spinner_style" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spinnerMode="dropdown" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+</LinearLayout>

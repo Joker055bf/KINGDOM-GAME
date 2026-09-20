@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/tgs_aics_white_translucent_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_form_title" />
+    <EditText android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="@color/normalBlack" android:textColorHint="#ffa5acb4" android:id="@id/form_single_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="8.0dip" android:hint="请输入" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/tgs_aics_edit_cursor_shape" />
+    <include layout="@layout/tgs_aics_form_error_tip" />
+</LinearLayout>

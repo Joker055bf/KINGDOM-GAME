@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ffc2c7cc" android:id="@id/tgs_aics_evaluate_nps_worst_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tgs_aics_evaluate_very_bad" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffc2c7cc" android:gravity="end" android:id="@id/tgs_aics_evaluate_nps_best_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tgs_aics_evaluate_very_good" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tgs_aics_nps_score_txt" android:background="@mipmap/tgs_aics_icon_bubbles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="9" android:maxLines="3" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:breakStrategy="simple" />
+    </FrameLayout>
+    <com.tgs.aics.thirdtool.nps.NpsRatingBar android:layout_gravity="center_horizontal" android:id="@id/tgs_aics_nps_rating_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:rsb_max="10" />
+</LinearLayout>

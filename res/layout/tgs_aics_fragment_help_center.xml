@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tgs.aics.widget.TypeListView android:id="@id/tgs_aics_help_center_fragment_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/tgs_aics_pressed_selector" android:divider="#fff2f4f7" android:dividerHeight="1.0dip" />
+    <include android:id="@id/tgs_aics_help_center_fragment_empty_view_layout" layout="@layout/tgs_aics_empty_view" />
+</LinearLayout>

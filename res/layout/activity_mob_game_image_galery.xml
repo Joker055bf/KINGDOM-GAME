@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff16161e" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageButton android:id="@id/btn_cancel_galery" android:background="@android:color/transparent" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" android:src="@mipmap/close_galery" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@android:color/white" android:id="@id/tvNumberSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" android:layout_toRightOf="@id/btn_cancel_galery" android:layout_centerVertical="true" />
+        <TextView android:textColor="@android:color/white" android:id="@id/tvHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/images_selected" android:layout_alignBaseline="@id/tvNumberSelected" android:layout_alignBottom="@id/tvNumberSelected" android:layout_toEndOf="@id/tvNumberSelected" />
+        <ImageButton android:id="@id/btnSelect" android:background="@drawable/transparent" android:padding="5.0dip" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_send" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <GridView android:gravity="center" android:id="@id/grdImages" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="3" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/vk_captcha_dialog_bg_inset" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vkid_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <ImageView android:id="@id/antenna" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/vk_text_primary" android:id="@id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/vk_loading_error" android:textAlignment="center" />
+    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/vk_text_subhead" android:id="@id/error_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vk_loading_error_description" android:textAlignment="center" />
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/vk_text_contrast" android:id="@id/retry_btn" android:background="@drawable/vk_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="62.0dip" android:text="@string/vk_retry" android:textAlignment="center" />
+</LinearLayout>

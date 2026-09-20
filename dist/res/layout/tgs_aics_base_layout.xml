@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="backFinish" android:layout_marginStart="10.0dip">
+            <ImageView android:background="@mipmap/tgs_aics_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff0f2233" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_back" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="#ff0f2233" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tgs_aics_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@mipmap/tgs_aics_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff0f2233" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_back" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end|center" android:id="@id/tgs_aics_right_icon" android:background="@mipmap/tgs_aics_icon_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

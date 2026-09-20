@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black60" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_loading_layout" />
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/redemptionCodeContainer" android:visibility="gone" android:layout_width="@dimen/tgs_aics_redemption_code_view_width" android:layout_height="@dimen/tgs_aics_redemption_code_view_height">
+        <FrameLayout android:id="@id/titleBarLayout" android:layout_width="fill_parent" android:layout_height="@dimen/tgs_aics_redemption_code_title_height">
+            <ImageView android:id="@id/titleBgImgView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/tgs_aics_redemption_code_bg" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/closeBtn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@android:drawable/ic_menu_close_clear_cancel" android:scaleType="center" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/titleView" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/tgs_aics_redemption_title" android:singleLine="true" />
+        </FrameLayout>
+        <ImageView android:id="@id/contentBgImgView" android:layout_width="fill_parent" android:layout_height="250.0dip" android:src="@drawable/tgs_aics_redemption_code_bg" android:scaleType="centerCrop" android:layout_below="@id/titleBarLayout" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignTop="@id/contentBgImgView">
+            <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:id="@id/redemptionCodeLabel" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/tgs_aics_redemption_label" android:singleLine="true" android:paddingHorizontal="15.0dip" />
+                <EditText android:textSize="13.0sp" android:id="@id/redemptionCodeInput" android:background="@drawable/tgs_aics_redemption_code_input_style" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="15.0dip" android:hint="@string/tgs_aics_redemption_placeholder" android:singleLine="true" android:paddingHorizontal="15.0dip" />
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/redeemBtnLayout" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_margin="15.0dip">
+                    <ImageView android:id="@id/exchangeBgImgView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/tgs_aics_form_btn_submit_style" android:scaleType="centerCrop" />
+                    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/exchangeBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tgs_aics_redemption_redeem" android:singleLine="true" />
+                </FrameLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/redemptionCodeTip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/tgs_aics_redemption_instructions" android:paddingHorizontal="15.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,56 @@
+.class Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient$1;
+.super Ljava/lang/Object;
+.source "PayPalWebChromeClient.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient;->onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient;
+
+.field final synthetic val$result:Landroid/webkit/JsPromptResult;
+
+
+# direct methods
+.method constructor <init>(Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient;Landroid/webkit/JsPromptResult;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 34
+    iput-object p1, p0, Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient$1;->this$0:Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient;
+
+    iput-object p2, p0, Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient$1;->val$result:Landroid/webkit/JsPromptResult;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    .line 36
+    iget-object p1, p0, Lcom/t4f/sdkpay/paypal/PayPalWebChromeClient$1;->val$result:Landroid/webkit/JsPromptResult;
+
+    invoke-virtual {p1}, Landroid/webkit/JsPromptResult;->confirm()V
+
+    return-void
+.end method

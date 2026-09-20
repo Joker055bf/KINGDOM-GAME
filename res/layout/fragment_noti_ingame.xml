@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_ingame_noti" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mobgame.gui.MobGameWebView android:id="@id/webview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:layout_alignParentTop="true" style="@style/MobProgressBar" />
+    </FrameLayout>
+</RelativeLayout>

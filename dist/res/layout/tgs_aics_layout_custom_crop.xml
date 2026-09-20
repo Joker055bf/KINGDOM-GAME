@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mCloseImg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/tgs_aics_picker_crop_close" android:scaleType="centerInside" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/white_F5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剪裁" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/mOkImg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/tgs_aics_picker_crop_ok" android:scaleType="centerInside" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tgs_ad_permission_accept">AĊĊETTA</string>
+    <string name="tgs_ad_permission_analytics">Informazzjoni Analitika</string>
+    <string name="tgs_ad_permission_desc">"Aħna, is-sussidjarji u l-imsieħba tagħna, naċċessaw u nħażnu data fuq it-tagħmir tiegħek biex nippersonalizzaw il-kontenut u r-reklamar, inkejlu u nipprovdu l-istess, nanalizzaw l-użu u ntejbu l-esperjenza tiegħek.
+
+Agħfas Aċċetta biex tagħti l-kunsens tiegħek, jew mur fil-Maniġġar tal-Preferenzi biex tagħżel aktar għażliet. Għal aktar informazzjoni, jekk jogħġbok ara l-%s tagħna."</string>
+    <string name="tgs_ad_permission_encrypted">Dejta tal-Logħob Imċifrat</string>
+    <string name="tgs_ad_permission_manage">MANIĠĠAR TAL-PREFERENZI</string>
+    <string name="tgs_ad_permission_necessary">"Informazzjoni Meħtieġa
+Dejjem attiva"</string>
+    <string name="tgs_ad_permission_personalized">Reklamar Personalizzat</string>
+    <string name="tgs_ad_permission_privacy">Politika tal-Privatezza</string>
+    <string name="tgs_ad_permission_reject">IRREFJUTA</string>
+    <string name="tgs_ad_permission_save">SALVA PREFERENZI</string>
+    <string name="tgs_ad_permission_title">Aħna nagħtu importanza lill-privatezza tiegħek</string>
+    <string name="tgs_ad_permission_title2">Maniġġja l-preferenzi tiegħek</string>
+</resources>

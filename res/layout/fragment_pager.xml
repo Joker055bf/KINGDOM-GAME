@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobgame.gui.MobGamePagerTabStrip android:layout_gravity="top" android:id="@id/pager_title_strip" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" app:pstsIndicatorHeight="2.0dip" app:pstsShouldExpand="true" app:pstsUnderlineColor="@android:color/transparent" app:pstsUnderlineHeight="1.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.mobgame.gui.MobGameViewPager android:id="@id/pager" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pager_title_strip" />
+    <com.mobgame.gui.view.MobIndicator android:gravity="center" android:id="@id/layout_indicator_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

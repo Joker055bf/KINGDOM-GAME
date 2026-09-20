@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校对</title>
+    <style>
+        @font-face {
+            font-family: 'Cairo';
+            src: url('${basepath}font/Cairo-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        :root {
+            --bg-size: auto 100vh;
+        }
+
+        body {
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+            max-height: 70%;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .button-container button {
+            border-radius: 8px;
+            width: calc(100vw - 32vw);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+
+        .button-text {
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            flex-grow: 1;
+            margin-right: 10px;
+            font-family: "Cairo";
+            color: #7e7e7e;
+            text-align: left;
+        }
+
+        .button-icon {
+            width: 10px;
+            height: 15px;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .imgBu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttonimg {
+            height: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1></h1>
+    <div class="imgBu">
+        <img id="backgroundImage" class="buttonimg">
+    </div>
+
+    <div class="button-container" id="buttonContainer">
+        <!-- Buttons will be generated here -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <script>
+        let userInfo = {}; // 在外部定义
+        const timestamp = Date.now().toString();
+        let basePath = ''; // 定义 basePath 变量
+
+        // 接收 basePath 的方法
+        function setBasePath(path) {
+            basePath = path;
+            // 更新背景图片和字体路径
+            document.body.style.backgroundImage = `url('${basePath}img/UI_Textproofreading_Bg.png')`;
+            const fontStyle = `@font-face {
+                font-family: 'Cairo';
+                src: url('${basePath}font/Cairo-SemiBold.ttf') format('truetype');
+                font-weight: 600;
+                font-style: normal;
+            }`;
+            const styleSheet = document.createElement('style');
+            styleSheet.type = 'text/css';
+            styleSheet.innerText = fontStyle;
+            document.head.appendChild(styleSheet);
+
+            // 动态设置图片路径
+            document.getElementById('backgroundImage').src = `${basePath}img/UI_Textproofreading_Img_Trans.png`;
+        }
+
+        function loadJsonData(jsonData) {
+        		    const timestamp = Date.now().toString();
+        		    let userInfo = {
+        		        userid: jsonData.userid,
+        		        version: jsonData.version,
+        		        language: jsonData.language,
+        		        server: jsonData.server,
+        		        time: timestamp
+        		    };
+        		    generateButtons(jsonData.buttons); // Pass the buttons data to the button generation function
+        		}
+        
+        // 使用
+        
+		
+
+
+
+        // Function to dynamically generate buttons based on the loaded JSON
+        function generateButtons(buttonsData) {
+            const buttonContainer = document.getElementById('buttonContainer');
+            
+            buttonsData.forEach(buttonData => {
+                const button = document.createElement('button');
+                button.onclick = () => openNewPage(buttonData);
+                
+                const buttonText = document.createElement('span');
+                buttonText.className = 'button-text';
+                buttonText.textContent = buttonData.text;
+                
+                const buttonIcon = document.createElement('img');
+                buttonIcon.src = `${basePath}img/UI_Textproofreading_Bg_Input_Arrow.png`;
+                buttonIcon.alt = '按钮图片';
+                buttonIcon.className = 'button-icon';
+                
+                button.appendChild(buttonText);
+                button.appendChild(buttonIcon);
+                
+                buttonContainer.appendChild(button);
+            });
+        }
+
+        // Function to open a new page with the button data
+        function openNewPage(buttonData) {
+            const newWindow = window.open("", "_blank");
+            const htmlContent = `
+                <!DOCTYPE html>
+                <html lang="zh-CN">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>translation</title>
+                    <style>
+                        @font-face {
+                            font-family: 'Cairo';
+                            src: url('${basePath}font/Cairo-SemiBold.ttf') format('truetype');
+                            font-weight: 600;
+                        }
+                        html, body {
+                            font-family: 'Cairo';
+                            background-image: url('${basePath}img/UI_Textproofreading_Bg.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            margin: 0;
+                            padding: 0;
+                            height: 100%;
+                            overflow: hidden;
+                            overscroll-behavior: none;
+                        }
+                        .text-display {
+                            border: none;
+                            padding: 10px;
+                            margin: 20px;
+                            color: white;
+                            border-radius: 5px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            background: rgba(217, 217, 217, 0.3);
+                        }
+                        .input-container {
+                            position: fixed;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            padding: 20px;
+                            gap: 10px;
+                        }
+                        input[type="text"] {
+                            width: 80%;
+                            padding: 10px;
+                            font-size: 16px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+                        button[type="submit"] {
+                            background-color: transparent;
+                            border: none;
+                        }
+                        .button-sub {
+                            width: 40%;
+                        }
+                        .imgBu {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .buttonimg {
+                            height: 30px;
+                            margin-top: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div>
+                        <div class="imgBu">
+                            <img src="${basePath}img/UI_Textproofreading_Img_Text.png" class="buttonimg">
+                        </div>
+                    </div>
+                    <div class="text-display">${buttonData.text}</div>
+                    <div class="input-container">
+                        <input type="text" placeholder="input" id="userInput">
+                        <button type="submit" id="submitButton">
+                            <img src="${basePath}img/UI_Textproofreading_Btn_Submit.png" class="button-sub" />
+                        </button>
+                    </div>
+                </body>
+                </html>
+            `;
+            newWindow.document.write(htmlContent);
+            newWindow.document.close();
+
+              newWindow.onload = function() {
+                    // 1. 动态加载CryptoJS库
+                    const cryptoScript = newWindow.document.createElement('script');
+                    cryptoScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js';
+                    cryptoScript.onload = function() {
+                        // 2. 创建加密逻辑
+                        const script = newWindow.document.createElement('script');
+                        script.textContent = `
+                            document.getElementById('submitButton').onclick = function() {
+                                const inputValue = document.getElementById('userInput').value;
+								const timestamp= Date.now();
+                        
+                                // 组合userid和server
+                                const combinedString = '${userInfo.time} ${userInfo.userid} ${userInfo.server}';
+								
+								
+                        
+                                // 使用AES加密，定义密钥
+                                const key = CryptoJS.enc.Utf8.parse('aiauto_translate'); // 使用自定义的16字节密钥
+                                const iv = CryptoJS.enc.Utf8.parse('0123456789abcdef'); // 使用固定的16字节IV
+                        
+                                // 对组合后的字符串进行AES加密
+                                const encrypted = CryptoJS.AES.encrypt(combinedString, key, {
+                                    iv: iv,
+                                    padding: CryptoJS.pad.Pkcs7,
+                                    mode: CryptoJS.mode.CBC
+                                });
+                        
+                                // 将加密后的密文与IV转换为Base64（方便传输）
+                                const encryptedString = encrypted.ciphertext.toString(CryptoJS.enc.Base64);
+                                const ivString = iv.toString(CryptoJS.enc.Base64);
+								
+                        
+                                const payload = {
+                                    // 发送密文和IV
+                                    sign: encryptedString, 
+                                    iv: ivString,
+									time: ${userInfo.time},
+                        
+                                    // 其余未加密字段
+									userid:'${userInfo.userid}',
+									serverid:'${userInfo.server}',
+                                    version_id: '${userInfo.version}',
+                                    lang: '${userInfo.language}',
+                                    key: '${buttonData.key}',
+                                    zh: '${buttonData.zh}',
+                                    text: '${buttonData.text}',
+                                    userInput: inputValue
+                                };
+                        
+                                // Preview JSON in an alert (for quick inspection)
+                                alert('Preview JSON Payload: ' + JSON.stringify(payload, null, 2));
+                        
+                                // Log JSON to the console (for detailed inspection)
+                                console.log('Preview JSON Payload:', payload);
+                        
+                                // Optional: After previewing, confirm with the user before sending
+                                const confirmSend = confirm('Do you want to send this JSON?');
+                                if (confirmSend) {
+                                    // Send JSON data using fetch if confirmed
+                                    fetch('http://172.21.114.12:8890/api/translate/auto_verify/auto_verify', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify(payload)
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        alert('Submit successfully: ' + JSON.stringify(data));
+                                    })
+                                    .catch(error => {
+                                        alert('Submit failed: ' + error);
+                                    });
+                                } else {
+                                    alert('JSON submission canceled.');
+                                }
+                            };
+                        `;
+                        newWindow.document.body.appendChild(script);
+                    };
+                    newWindow.document.body.appendChild(cryptoScript);
+                };
+        }
+    </script>
+
+</body>
+</html>

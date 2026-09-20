@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout_main_dashboard" android:background="@drawable/transparent" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/contentPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_large" app:cardBackgroundColor="@null" app:cardCornerRadius="@dimen/padding_large" app:cardElevation="0.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/left_drawer" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_item_left" android:background="@drawable/backgroud_dialog_dashboard_left" android:layout_width="145.0dip" android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleview_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title_item" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginEnd="0.0dip" />
+                        <FrameLayout android:id="@id/layout_child_content" android:tag="fragment_webview" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@id/circle_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+                </RelativeLayout>
+                <ImageView android:id="@id/btn_close" android:focusable="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/ic_close_dashboard" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:id="@id/layout_tmp" android:background="#80000000" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_above="@id/left_drawer" />
+</LinearLayout>

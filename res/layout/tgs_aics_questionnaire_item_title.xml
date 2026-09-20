@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tgs.aics.thirdtool.htmltextview.HtmlTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff038cf4" android:gravity="center" android:id="@id/tgs_aics_questionnaire_item_title_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff808080" android:id="@id/tgs_aics_questionnaire_item_title_desc" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <TextView android:id="@id/tgs_aics_options_divider_line_txt" android:background="#ffd3d3d3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

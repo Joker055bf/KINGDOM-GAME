@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/btn_height">
+        <TextView android:textSize="@dimen/button_text_size" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/btnBack" android:paddingLeft="@dimen/padding_normal" android:paddingRight="@dimen/padding_normal" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/padding_xnormal" android:text="@string/lbl_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/button_text_size" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/btnClose" android:paddingLeft="@dimen/padding_normal" android:paddingRight="@dimen/padding_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/padding_xnormal" android:text="@string/close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swRegister" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btn_height">
+        <com.mobgame.gui.MobGameWebView2 android:id="@id/webview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btn_height">
+        <View android:background="@drawable/down_shadows" android:layout_width="fill_parent" android:layout_height="@dimen/padding_small" />
+        <ProgressBar android:id="@id/progressbarPredict" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/padding_small" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

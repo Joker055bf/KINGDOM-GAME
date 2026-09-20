@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ad_manage_dialog" android:background="@drawable/tgs_ad_permissions_view_bg" android:layout_width="404.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/ad_manage_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/tgs_ad_permission_title2" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/ad_manage_ad_storage_text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/tgs_ad_permission_necessary" />
+    <View android:id="@id/ad_manage_line_view" android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_manage_analytics_storage_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tgs_ad_permission_analytics" android:layout_weight="1.0" />
+        <Switch android:id="@id/AnalyticsStorageSwitch" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_manage_user_data_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tgs_ad_permission_encrypted" android:layout_weight="1.0" />
+        <Switch android:id="@id/ADUserDataSwitch" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_manage_personalization_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tgs_ad_permission_personalized" android:layout_weight="1.0" />
+        <Switch android:id="@id/ADPersonalizationSwitch" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <View android:background="#ffc3c3c3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/buttonSave" android:background="@drawable/tgs_ad_permissions_button" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/tgs_ad_permission_save" android:layout_centerHorizontal="true" />
+    <Button android:textSize="16.0sp" android:textColor="#ff3f3f3f" android:id="@id/buttonReject" android:background="@drawable/tgs_ad_permissions_button_gray" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/tgs_ad_permission_reject" android:layout_centerHorizontal="true" />
+</LinearLayout>

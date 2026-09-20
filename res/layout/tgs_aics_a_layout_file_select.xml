@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tgs_aics_questionnaire_options_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tgs_aics_file_select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/tgs_aics_icon_file_upload" android:scaleType="centerCrop" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffbfbfbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/tgs_aics_questionnaire_type_file_upload" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffbfbfbf" android:id="@id/tgs_aics_file_select_max_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_questionnaire_file_upload_max_size" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/tgs_aics_file_preview_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/tgs_aics_file_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/tgs_aics_icon_file_upload" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/tgs_aics_video_play_icon" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@mipmap/tgs_aics_video_play" />
+    </FrameLayout>
+    <ImageView android:id="@id/tgs_aics_remove_file" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/tgs_aics_delete_pic" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tgs_aics_document_preview_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/tgs_aics_icon_file" android:scaleType="centerCrop" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffbfbfbf" android:id="@id/tgs_aics_document_preview_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

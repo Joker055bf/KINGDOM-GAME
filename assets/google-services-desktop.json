@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675879416170",
+    "firebase_url": "https://kingdomguard-d8c8e.firebaseio.com",
+    "project_id": "kingdomguard-d8c8e",
+    "storage_bucket": "kingdomguard-d8c8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675879416170:android:f5a8383f7dc8f92a227513",
+        "android_client_info": {
+          "package_name": "com.tap4fun.odin.kingdomguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675879416170-881chacqhb61bcbhkl6u5ubfn0mqoga2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tap4fun.odin.kingdomguard",
+            "certificate_hash": "d8895e8d634132e7964c73fd450670692b39b519"
+          }
+        },
+        {
+          "client_id": "675879416170-uu4qsab67qnlds4f50sksmcps690kde3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0nlKm3pxbCLnLDL091LzL1AnznK_nB6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675879416170-uu4qsab67qnlds4f50sksmcps690kde3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

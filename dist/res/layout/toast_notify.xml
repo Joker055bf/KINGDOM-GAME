@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:padding="@dimen/padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutToast" android:background="@drawable/bg_toast_hello" android:paddingLeft="@dimen/toast_padding" android:paddingRight="@dimen/toast_padding" android:layout_width="wrap_content" android:layout_height="@dimen/toast_height" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/ivToast" android:layout_width="@dimen/toast_icon_size" android:layout_height="@dimen/toast_icon_size" android:src="@drawable/ic_info_success" />
+        <TextView android:textSize="@dimen/toast_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvDescription" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="This is a custom toast!" />
+    </LinearLayout>
+</RelativeLayout>

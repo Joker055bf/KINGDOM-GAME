@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tgs_ad_permission_accept">GLAC</string>
+    <string name="tgs_ad_permission_analytics">Eolas Anailíseach</string>
+    <string name="tgs_ad_permission_desc">"Roinneann muid, ár bhfochuideachtaí, agus comhpháirtithe, sonraí ar do ghléas a rochtain agus a stóráil chun ábhar agus fógraíocht a phearsanú, a thomhas agus a sholáthar, úsáid a anailísiú agus do thaithí a fheabhsú.
+
+Brúigh Glac chun seo a cheadú, nó téigh go Bainistigh Sainroghanna chun níos mó roghanna a dhéanamh. Féach ár %s le haghaidh tuilleadh eolais."</string>
+    <string name="tgs_ad_permission_encrypted">Sonraí Criptithe Cluiche</string>
+    <string name="tgs_ad_permission_manage">BAINISTIGH SAINROGHANNA</string>
+    <string name="tgs_ad_permission_necessary">"Eolas Riachtanach
+I gcónaí gníomhach"</string>
+    <string name="tgs_ad_permission_personalized">Fógraíocht Phearsantaithe</string>
+    <string name="tgs_ad_permission_privacy">Polasaí Príobháideachais</string>
+    <string name="tgs_ad_permission_reject">DIÚLTAIGH</string>
+    <string name="tgs_ad_permission_save">SÁBHÁIL SAINROGHANNA</string>
+    <string name="tgs_ad_permission_title">Tá meas againn ar do phríobháideacht</string>
+    <string name="tgs_ad_permission_title2">Bainistigh do shainroghanna</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@mipmap/tgs_aics_questionnaire_pop_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tgs_aics_questionnaire_rating_pop_half_star" android:background="@mipmap/tgs_aics_icon_star_checked_half" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" />
+    <ImageView android:id="@id/tgs_aics_questionnaire_rating_pop_full_star" android:background="@mipmap/tgs_aics_icon_star_checked" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginEnd="5.0dip" />
+</LinearLayout>

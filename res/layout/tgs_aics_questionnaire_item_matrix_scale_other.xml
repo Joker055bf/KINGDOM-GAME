@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/normalBlack" android:layout_gravity="center_vertical" android:id="@id/tgs_aics_questionnaire_item_matrix_scale_other_title" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Title" />
+    <com.tgs.aics.thirdtool.ratingbar.NewBaseRatingBar android:layout_gravity="end" android:id="@id/tgs_aics_questionnaire_item_matrix_scale_other_rating_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:srb_clearRatingEnabled="false" app:srb_drawableEmpty="@mipmap/tgs_aics_icon_star_uncheck" app:srb_drawableFilled="@mipmap/tgs_aics_icon_star_checked" app:srb_minimumStars="0.0" app:srb_numStars="5" app:srb_rating="0.0" app:srb_starHeight="23.0dip" app:srb_starPadding="0.0dip" app:srb_starWidth="23.0dip" />
+</LinearLayout>

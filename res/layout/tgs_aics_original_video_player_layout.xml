@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tgs_aics_original_video_player_preview_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/tgs_aics_original_video_player_back_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip">
+            <ImageView android:background="@mipmap/tgs_aics_back_white" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_back" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/tgs_aics_original_video_player_start_center" android:background="@mipmap/tgs_aics_video_play_center" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+</FrameLayout>

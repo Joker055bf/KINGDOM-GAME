@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_questionnaire_root_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_base_layout" />
+    <include layout="@layout/tgs_aics_loading_layout" />
+    <include layout="@layout/tgs_aics_load_error_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tgs_aics_questionnaire_config_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@mipmap/tgs_aics_questionnaire_error_page" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="@color/normalBlack" android:gravity="center" android:id="@id/tgs_aics_questionnaire_config_error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff9b9da7" android:gravity="center" android:id="@id/tgs_aics_questionnaire_config_error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tgs_aics_questionnaire_submit_success_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/tgs_aics_diagnose_icon_succeed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/tgs_aics_first_text_size" android:textStyle="bold" android:textColor="@color/normalBlack" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/tgs_aics_questionnaire_thanks_for_your_participate" />
+        <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="#ff9b9da7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/tgs_aics_questionnaire_each_role_only_one_reward" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tgs_aics_second_text_size" android:textColor="@color/normalBlack" android:gravity="center" android:id="@id/tgs_aics_paginator_max_time_txt" android:background="#22bfbfbf" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tgs_aics_questionnaire_root_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

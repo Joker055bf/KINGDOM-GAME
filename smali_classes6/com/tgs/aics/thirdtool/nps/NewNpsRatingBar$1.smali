@@ -1,0 +1,14 @@
+.class synthetic Lcom/tgs/aics/thirdtool/nps/NewNpsRatingBar$1;
+.super Ljava/lang/Object;
+.source "NewNpsRatingBar.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tgs/aics/thirdtool/nps/NewNpsRatingBar;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

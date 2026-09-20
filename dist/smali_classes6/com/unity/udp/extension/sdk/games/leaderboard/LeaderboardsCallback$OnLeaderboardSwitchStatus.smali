@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/unity/udp/extension/sdk/games/leaderboard/LeaderboardsCallback$OnLeaderboardSwitchStatus;
+.super Ljava/lang/Object;
+.source "LeaderboardsCallback.java"
+
+# interfaces
+.implements Lcom/unity/udp/extension/sdk/ICallBack;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/unity/udp/extension/sdk/games/leaderboard/LeaderboardsCallback;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnLeaderboardSwitchStatus"
+.end annotation
+
+
+# virtual methods
+.method public abstract onSuccess(I)V
+.end method

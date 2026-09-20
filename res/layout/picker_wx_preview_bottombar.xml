@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mTitleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mPreviewRecyclerView" android:background="#f0303030" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/bottom_bar" android:background="#f0303030" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#30ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <CheckBox android:textColor="@color/white_F5" android:gravity="center" android:layout_gravity="center" android:id="@id/mOriginalCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/picker_str_bottom_original" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+        <CheckBox android:textColor="#ffffffff" android:id="@id/mSelectCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/picker_str_bottom_choose" android:includeFontPadding="true" android:drawablePadding="4.0dip" android:layout_centerVertical="true" android:paddingStart="4.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

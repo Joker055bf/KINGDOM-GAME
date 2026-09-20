@@ -1,0 +1,18 @@
+{
+  "userid": "26459",
+  "version": "v1",
+  "language":"en",
+  "server":"1024",
+  "buttons": [
+    {
+      "key": "key1",
+      "zh": "中文1",
+      "text": "这是按钮1的文本"
+    },
+    {
+      "key": "key2",
+      "zh": "中文1",
+      "text": "这是按钮2的文本"
+    }
+  ]
+}

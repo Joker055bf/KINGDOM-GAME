@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf8"?>
+<resources>
+  <string name="_hu_ci_">0</string>
+  <string name="_hu_ccn_">global</string>
+  <string name="channel_identifier">gplay</string>
+  <string name="support_platform">google,facebook,anonymous,email,line,twitter,vk</string>
+  <string name="prefer_platform">anonymous</string>
+  <string name="AutoBinding">false</string>
+  <string name="line_channel_id">1657123294</string>
+  <string name="twitter_client_id">UVhBUTlfWkV0X1ZtS09EMzAyWEw6MTpjaQ</string>
+  <string name="twitter_client_secret">YhsICgoes-8vLblCYsSN2OcOpi75nM_UMokjzvuCddfGsCCXA9</string>
+  <string name="twitter_redirect_url">kingdomguardjp://</string>
+  <string name="google_client_id">675879416170-uu4qsab67qnlds4f50sksmcps690kde3.apps.googleusercontent.com</string>
+  <string name="discord_app_id">1432631371519758449</string>
+  <string name="tgs_loading_media_path">loading</string>
+</resources>

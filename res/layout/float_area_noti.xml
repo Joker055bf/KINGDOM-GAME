@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_float_noti" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_image18" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_image18" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_float_noti" android:paddingTop="0.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip" android:src="@drawable/ic_logo18" android:adjustViewBounds="true" android:contentDescription="@string/blank" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

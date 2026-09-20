@@ -1,0 +1,40 @@
+.class public final synthetic Lcom/tgs/aics/diagnose/view/DiagnoseActivity$$ExternalSyntheticLambda5;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/tgs/aics/diagnose/view/DiagnoseActivity;
+
+.field public final synthetic f$1:Lcom/tgs/aics/diagnose/IDiagnose;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/tgs/aics/diagnose/view/DiagnoseActivity;Lcom/tgs/aics/diagnose/IDiagnose;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/tgs/aics/diagnose/view/DiagnoseActivity$$ExternalSyntheticLambda5;->f$0:Lcom/tgs/aics/diagnose/view/DiagnoseActivity;
+
+    iput-object p2, p0, Lcom/tgs/aics/diagnose/view/DiagnoseActivity$$ExternalSyntheticLambda5;->f$1:Lcom/tgs/aics/diagnose/IDiagnose;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/tgs/aics/diagnose/view/DiagnoseActivity$$ExternalSyntheticLambda5;->f$0:Lcom/tgs/aics/diagnose/view/DiagnoseActivity;
+
+    iget-object v1, p0, Lcom/tgs/aics/diagnose/view/DiagnoseActivity$$ExternalSyntheticLambda5;->f$1:Lcom/tgs/aics/diagnose/IDiagnose;
+
+    invoke-virtual {v0, v1}, Lcom/tgs/aics/diagnose/view/DiagnoseActivity;->lambda$onDiagnoseUpdate$2$com-tgs-aics-diagnose-view-DiagnoseActivity(Lcom/tgs/aics/diagnose/IDiagnose;)V
+
+    return-void
+.end method

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AUTH_REQUIRE_TITLE">需要授权</string>
+    <string name="CAMERA">相机</string>
+    <string name="CHOOSE_IMAGE">选择图片</string>
+    <string name="DOWNLOAD_COMPLETED">下载完成</string>
+    <string name="DOWNLOAD_DESCRIPTION">"将文件保存到“下载”文件夹 "</string>
+    <string name="DOWNLOAD_STARTED">下载已开始</string>
+    <string name="EXTERNAL_WRITE_PERMISSION_LACK">没有外部存储写入权限。</string>
+    <string name="INVALID_URL">无效的 URL</string>
+    <string name="LOADING">加载中…</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST">"允许'%1$s'访问%2$s吗？"</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST_TITLE">权限请求</string>
+    <string name="MICROPHONE">麦克风</string>
+    <string name="PASSWORD">密码</string>
+    <string name="SAVE_IMAGE">保存图片</string>
+    <string name="USERNAME">用户名</string>
+    <string name="anonymous">以本地帳號登入</string>
+    <string name="applovin_agree_message">如果您选择开始使用我们的应用，请点击\"继续\"</string>
+    <string name="applovin_continue_button_text">继续</string>
+    <string name="applovin_gdpr_advertising_partners_screen_message">如同我们在隐私政策中所表述的，在您同意的前提下，我们可能将此数据分享给以下的合作伙伴，以帮助他们提供个性化广告和内容：</string>
+    <string name="applovin_gdpr_advertising_partners_screen_title">个性化广告和内容</string>
+    <string name="applovin_gdpr_analytics_partners_screen_message">如同我们在隐私政策中所表述的，在您同意的前提下，我们可能将此数据分享给以下的合作伙伴，用于产品表现监测以及改进我们的产品和服务。</string>
+    <string name="applovin_gdpr_analytics_partners_screen_title">产品表现监测和产品优化</string>
+    <string name="applovin_gdpr_are_you_sure_screen_message">"请允许我们和我们的合作伙伴使用此数据，以为您提供个性化的广告和内容，以及我们在隐私政策中列明的其他用途。
+
+• 为您提供个性化的体验，广告和内容。
+
+• 请支持我们的产品优化和开发
+
+• 这将允许您参加我们的应用内促销活动"</string>
+    <string name="applovin_gdpr_are_you_sure_screen_title">您是否确定？</string>
+    <string name="applovin_gdpr_back_button_text">返回</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_1">请支持我们的免费应用！</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_2">这会为您提供更个性化的体验，包括个性化广告和内容</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_3">请支持我们的产品优化和开发</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_4">这将允许您参加我们的应用内促销活动</string>
+    <string name="applovin_gdpr_learn_more_screen_message_1">感谢您下载我们的应用！我们能为您提供更独一无二的应用内体验，如果您允许我们和我们的合作伙伴使用以下这些数据：</string>
+    <string name="applovin_gdpr_learn_more_screen_message_2">您有权随时变更您的选择。如果您决定停止分享数据，您仍然可以使用应用，并且您仍然会看到广告，但广告内容会与您的兴趣匹配度下降。</string>
+    <string name="applovin_gdpr_main_screen_analytics_purposes_switch_text">产品表现监测和产品优化</string>
+    <string name="applovin_gdpr_main_screen_learn_more_button_text">了解更多</string>
+    <string name="applovin_gdpr_main_screen_message">"如同我们在隐私政策中所表述的，在您同意的前提下，我们会收集您设备的相关信息，比如IP地址和广告标识符。该数据将允许我们和我们的合作伙伴为您提供个性化的广告和内容，以及持续改善您的体验。
+
+您可以选择允许我们和我们的合作伙伴出于下列目的使用此数据"</string>
+    <string name="applovin_gdpr_main_screen_personalized_advertising_purposes_switch_text">个性化的广告内容</string>
+    <string name="applovin_gdpr_main_screen_privacy_policy_switch_text">我确认本人已满16周岁并已知悉和理解该隐私政策。</string>
+    <string name="applovin_gdpr_main_screen_title">"感谢您下载 
+%s!"</string>
+    <string name="applovin_gdpr_understand_and_continue_button_text">我理解并同意</string>
+    <string name="applovin_learn_more_screen_title">帮助我们继续保持%s免费并为您带来更多乐趣！</string>
+    <string name="applovin_pp_and_tos_title">使用%s之前, 您必须同意我们的服务条款，并确认您已经阅读并知悉我们的隐私政策。</string>
+    <string name="applovin_pp_title">使用%s之前, 您必须确认您已经阅读并知悉我们的隐私政策.</string>
+    <string name="applovin_privacy_policy_text">隐私政策</string>
+    <string name="applovin_terms_of_service_text">服务条款</string>
+    <string name="bind">連結帳號</string>
+    <string name="email">郵箱</string>
+    <string name="email_input_code_hint">請輸入驗證碼</string>
+    <string name="email_input_hint">請輸入郵箱地址</string>
+    <string name="facebook">Facebook</string>
+    <string name="get_code">獲取驗證碼</string>
+    <string name="get_code_after_seconds">%d秒後獲取驗證碼</string>
+    <string name="googlePlay">Google Play</string>
+    <string name="googlePlayGames">Google Play Games</string>
+    <string name="login">登入</string>
+    <string name="loginFailed">登入出現錯誤，請稍後重試或聯絡客服。</string>
+    <string name="srl_component_falsify" formatted="false">"%s 虚假区域
+代表运行时拖动的高度【%.1fdp】 
+而不会显示任何东西"</string>
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_footer_failed">加载失败</string>
+    <string name="srl_footer_finish">加载完成</string>
+    <string name="srl_footer_loading">正在加载…</string>
+    <string name="srl_footer_nothing">没有更多数据了</string>
+    <string name="srl_footer_pulling">上拉加载更多</string>
+    <string name="srl_footer_refreshing">等待头部刷新完成…</string>
+    <string name="srl_footer_release">释放立即加载</string>
+    <string name="srl_header_failed">刷新失败</string>
+    <string name="srl_header_finish">刷新完成</string>
+    <string name="srl_header_loading">等待底部加载完成…</string>
+    <string name="srl_header_pulling">下拉可以刷新</string>
+    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_release">释放立即刷新</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+    <string name="srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="switchAccount">切換帳號</string>
+    <string name="t4f_sdk_file_server_choose_album">相册选择</string>
+    <string name="t4f_sdk_file_server_choose_camera">相机选择</string>
+    <string name="t4f_sdk_file_server_title_clip_image">移动和缩放</string>
+    <string name="t4f_str_cancel">取消</string>
+    <string name="t4f_str_push_permission_request_msg">%1s希望发送推送消息</string>
+    <string name="t4f_str_request_permission">通知</string>
+    <string name="t4f_str_sure">好的</string>
+    <string name="tgs_audio_permission_request">我们将使用麦克风权限，给您提供语音聊天功能</string>
+    <string name="tgs_email_login_or_register">郵箱登錄/註冊</string>
+    <string name="tgs_get_code_fail">驗證碼發送失敗(%s)</string>
+    <string name="tgs_get_code_success">驗證碼發送成功</string>
+    <string name="tgs_gs_conflict_message">"您的 Google Play 游戏中保存了另一个游戏账号。是否切换到该账号？
+
+注意：选择“保留当前”会覆盖 Google Play 游戏中保存的账号，且无法恢复。"</string>
+    <string name="tgs_gs_conflict_no">保留当前</string>
+    <string name="tgs_gs_conflict_title">检测到其他账号</string>
+    <string name="tgs_gs_conflict_yes">切换</string>
+    <string name="tgs_switch_account">切換帳戶</string>
+    <string name="x_recycler_click_load_more">点击加载更多</string>
+    <string name="x_recycler_data_empty">暂时没有数据</string>
+    <string name="x_recycler_load_error">加载出错啦，请稍后重试</string>
+    <string name="x_recycler_load_more_message">正在加载更多数据，请稍后</string>
+    <string name="x_recycler_more_not">没有更多数据啦</string>
+</resources>

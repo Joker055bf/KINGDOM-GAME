@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_im_root_layout" android:background="@color/tgs_aics_default_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_base_layout" />
+    <FrameLayout android:id="@id/tgs_aics_im_message_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/tgs_aics_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.scwang.smart.refresh.header.ClassicsHeader android:id="@id/tgs_aics_refresh_classic_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/tgs_aics_im_message_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/tgs_aics_im_to_newest_message_layout" android:background="@drawable/tgs_aics_to_newest_message_style" android:paddingTop="8.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <ImageView android:background="@mipmap/tgs_aics_more_message_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff899199" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_to_newest_message" />
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/tgs_aics_loading_layout" />
+    </FrameLayout>
+    <View android:id="@id/tgs_aics_im_message_input_divider" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tgs_aics_im_message_input_layout" android:background="#fff6f6f6" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <ImageView android:id="@id/tgs_aics_im_img_pick" android:background="@mipmap/tgs_aics_img_pick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" />
+        <EditText android:textSize="@dimen/tgs_aics_second_text_size" android:id="@id/tgs_aics_im_message_input" android:background="@drawable/tgs_aics_message_input_style" android:padding="7.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="100.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/tgs_aics_im_message_emoji" android:background="@mipmap/tgs_aics_emoji_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" />
+        <ImageView android:id="@id/tgs_aics_im_message_send" android:background="@drawable/tgs_aics_message_send_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/tgs_aics_im_emoji_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <GridView android:id="@id/tgs_aics_im_emoji_grid_view" android:background="#ffffffff" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/tgs_aics_emotion_item_click_selector" android:numColumns="7" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/tgs_aics_im_emoji_delete" android:background="#ffffffff" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/tgs_aics_emoji_delete" android:paddingStart="10.0dip" android:paddingEnd="3.0dip" android:layout_marginEnd="20.0dip" />
+    </FrameLayout>
+</LinearLayout>

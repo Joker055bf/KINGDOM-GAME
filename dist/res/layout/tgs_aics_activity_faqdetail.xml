@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tgs_aics_faq_detail_root_layout" android:background="@color/tgs_aics_default_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tgs_aics_base_layout" />
+    <include layout="@layout/tgs_aics_loading_layout" />
+    <include layout="@layout/tgs_aics_load_error_layout" />
+    <ScrollView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <WebView android:id="@id/tgs_aics_faqdetail_richtext" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textColor="#ff707070" android:id="@id/tgs_aics_is_solve_problem_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/tgs_aics_faq_detail_is_solve_problem" android:layout_centerInParent="true" />
+                <TextView android:id="@id/textView1" android:background="#ff7f7f7f" android:layout_width="350.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/tgs_aics_is_solve_problem_tv" />
+                <TextView android:id="@id/textView2" android:background="#ff7f7f7f" android:layout_width="350.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/tgs_aics_is_solve_problem_tv" />
+            </RelativeLayout>
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <com.tgs.aics.widget.CustomRadioButton android:textSize="@dimen/tgs_aics_third_text_size" android:textColor="@drawable/tgs_aics_faq_detail_like_selector" android:gravity="center" android:id="@id/tgs_aics_faqdetail_solved_btn" android:background="@drawable/tgs_aics_faq_detail_button_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/tgs_aics_faq_detail_solved" android:drawablePadding="5.0dip" android:drawableStart="@drawable/tgs_aics_faq_detail_like_selector" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                <com.tgs.aics.widget.CustomRadioButton android:textSize="@dimen/tgs_aics_third_text_size" android:textColor="@drawable/tgs_aics_faq_detail_dislike_selector" android:gravity="center" android:id="@id/tgs_aics_faqdetail_unsolved_btn" android:background="@drawable/tgs_aics_faq_detail_button_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/tgs_aics_faq_detail_not_solved" android:drawablePadding="5.0dip" android:drawableStart="@drawable/tgs_aics_faq_detail_dislike_selector" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+            </RadioGroup>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textColor="#ff707070" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_faq_detail_still_have_problem" />
+                <TextView android:textColor="#ff038cf4" android:id="@id/tgs_aics_faq_detail_contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tgs_aics_service_progress" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexion xmlns="http://ns.flexionmobile.com/flexionsdk/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://ns.flexionmobile.com/flexionsdk/1.0/flexion-sdk.xsd">
+    <billing>
+        <testData>
+
+            <privateKey key="MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBALJEmt8risM+BDZ9DNloAGBwDg645j/fA75DdXb+D0bAaE9Bt8ntQpWyJNQjJOGsDA+ef0WxKNSBN+pJQqbygRW8kFXxxhanaZ4pulKkz/ljmyePwHqe4LMsIWFu0wPpgiTQ9e8kdZYVZdw/wEhSNJfsS0+LYT7wZqoNa0xhU+B/AgMBAAECgYBZCDB9AwcTibaa7AttzSZbA7vRmIDOJ3h8Hr7cxfglMtUluEGtJMTbdJQ2KrMxzjZb2qHf0aH9t+eQKDSUoora1eVZ03Acdso8Zy6Wl80oSh7W9jHE2IMtJPneQ4JArT+vEfzKoaQ9wZoTcYTcQo/CIftoa1WUnVK384HfqBWo2QJBANbbvbcLubsVt4vTwfFBNN4+QAxjSIbEr96YmiFK0gNqLyMsWKtHyWv/Fbe/khadORlvvN4vw/eb/yk/M7oVBOUCQQDUZzhrdJLyJC5v00OSe7TURXSSEfxF/TsXWxed/muzzLNJQM2yRo8F5dksM5FgF+KVdr66cU+GbPFADwHqwb2TAkEAt+TDb5Odl75ypj7L081XjpABCZlATfix/fbmlHARZ9LOHXCrQ43hm4lr8SUJyEkwwdCc+h4vwBHIRmlNwIqU8QJARIiRocpZZ5vZB+fo06jqrdtDQ6Zd+c89c8nGkwn2gms4JhisxisSFtsU+bgh3hmW2JcZ71qESGF6birpeW/N1QJAXWgPBhsqIRYjH8QhpLcZh6owG8Z+7wwJrbBZ0ouCY+3AThJ8t/SsjL87l0jDT3AZAYxcy6oz3upxYrEAY9n88w=="/>
+
+            <!-- Some example items -->
+            <items>
+                <item id="1001" type="IN_APP" price="$0.99" title="80 Gems Gift" description="80 Gems Gift" priceAmountMicros="990000" priceCurrencyCode="USD" />
+                <item id="1002" type="IN_APP" price="$1.99" title="160 Gems Gift" description="160 Gems Gift" priceAmountMicros="1990000" priceCurrencyCode="USD" />
+                <item id="1003" type="IN_APP" price="$2.99" title="240 Gems Gift" description="240 Gems Gift" priceAmountMicros="2990000" priceCurrencyCode="USD" />
+                <item id="1005" type="IN_APP" price="$4.99" title="500 Gems Gift" description="500 Gems Gift" priceAmountMicros="4990000" priceCurrencyCode="USD" />
+                <item id="1010" type="IN_APP" price="$9.99" title="1200 Gems Gift" description="1200 Gems Gift" priceAmountMicros="9990000" priceCurrencyCode="USD" />
+                <item id="1020" type="IN_APP" price="$19.99" title="2500 Gems Gift" description="2500 Gems Gift" priceAmountMicros="19990000" priceCurrencyCode="USD" />
+                <item id="1050" type="IN_APP" price="$49.99" title="6500 Gems Gift" description="6500 Gems Gift" priceAmountMicros="49990000" priceCurrencyCode="USD" />
+                <item id="1100" type="IN_APP" price="$99.99" title="14000 Gems Gift" description="14000 Gems Gift" priceAmountMicros="99990000" priceCurrencyCode="USD" />
+                <item id="test_1100" type="IN_APP" price="$99.99" title="14000 Gems Gift Beta" description="14000 Gems Gift Beta" priceAmountMicros="99990000" priceCurrencyCode="USD" />
+            </items>
+
+
+            <purchases>
+                <!-- An example purchase. This will simulate a purchase ready to be consumed on first start up -->
+                <!--<purchase type="IN_APP" orderId="o1" itemId="1023608" purchaseTime="" state="PURCHASED" token="token_123" /> -->
+            </purchases>
+
+
+            <isBillingSupported>
+                <condition>
+                    <input type="IN_APP"/>
+                    <output billingResponse="OK"/>
+                </condition>
+
+                <condition>
+                    <input type="SUBSCRIPTION"/>
+                    <output billingResponse="BILLING_UNAVAILABLE" errorMessage="Not supported"/>
+                </condition>
+
+            </isBillingSupported>
+
+            <getPurchases>
+            </getPurchases>
+
+            <getItemDetails>
+            </getItemDetails>
+
+            <consumePurchase>
+            </consumePurchase>
+        </testData>
+
+    </billing>
+</flexion>

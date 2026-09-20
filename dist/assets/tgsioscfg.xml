@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 支持的平台，目前iOS所有平台有，anonymous,phone,email,oneclick,wechat,apple,google,facebook,twitter,line -->
+    <string name="support_platform">anonymous,email,apple,google,facebook,twitter,line,vk</string>
+    <string name="prefer_platform">anonymous</string>
+    <!-- 是否需要实名 -->
+    <string name="is_need_real_name_authentication">false</string>
+    <!-- Google的ClientId -->
+    <string name="google_client_id">675879416170-uu4qsab67qnlds4f50sksmcps690kde3.apps.googleusercontent.com</string>
+    <!-- Twitter的ClientId -->
+    <string name="twitter_client_id">UVhBUTlfWkV0X1ZtS09EMzAyWEw6MTpjaQ</string>
+    <!-- Twitter的ClientSecret -->
+    <string name="twitter_client_secret">YhsICgoes-8vLblCYsSN2OcOpi75nM_UMokjzvuCddfGsCCXA9</string>
+    <!-- Twitter的redirectUrl -->
+    <string name="twitter_redirect_url">kingdomguardjp://</string>
+    <!-- line的频道id -->
+    <string name="line_channel_id">1657123294</string>
+    <string name="vk_app_id">51877677</string>
+    <string name="vk_client_secret">RquwpV706FUYM2tkwUju</string>
+	<string name="only_bind_platform">discord</string>
+	<string name="discord_app_id">1432631371519758449</string>
+	<string name="tgs_loading_media_path">/Video/loading.mp4</string>
+</resources>

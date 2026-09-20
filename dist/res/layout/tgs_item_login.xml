@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/itemLogin_itemLL" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="200.0dip" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/itemLogin_iconIV" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/loginName" android:gravity="center" android:layout_gravity="center" android:id="@id/itemLogin_nameTV" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" android:layout_weight="1.0" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="6.0sp" android:autoSizeMaxTextSize="12.0sp" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/itemLogin_bindIconIV" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

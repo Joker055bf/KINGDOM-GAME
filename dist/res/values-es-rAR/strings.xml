@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anonymous">Conectarse con una cuenta local</string>
+    <string name="bind">VINCULAR CUENTA</string>
+    <string name="email">Correo</string>
+    <string name="email_input_code_hint">Escribe el código de verificación</string>
+    <string name="email_input_hint">Escribe tu dirección de correo</string>
+    <string name="facebook">Facebook</string>
+    <string name="get_code">Obtener código de verificación</string>
+    <string name="get_code_after_seconds">El código de verificación te llegará en %d s</string>
+    <string name="googlePlay">Google Play</string>
+    <string name="googlePlayGames">Google Play Games</string>
+    <string name="login">CONECTARSE</string>
+    <string name="loginFailed">Fallo de inicio de sesión. Por favor, contacta a soporte al cliente o intenta nuevamente más tarde.</string>
+    <string name="switchAccount">CAMBIAR CUENTA</string>
+    <string name="tgs_email_login_or_register">Correo/Registrarme</string>
+    <string name="tgs_get_code_fail">Código de verificación no enviado.(%s)</string>
+    <string name="tgs_get_code_success">Código de verificación enviado.</string>
+    <string name="tgs_switch_account">Cambiar cuenta</string>
+</resources>
