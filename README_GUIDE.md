@@ -5,20 +5,20 @@
 
 ---
 
-## 🛠️ الخيار الأول: الرفع التلقائي بنقرة واحدة (من كمبيوترك)
+## 🛠️ الخيار الأول: البناء والتجميع محلياً على جهازك بنقرة واحدة
 
-1. افتح المجلد واضغط مرتين على الملف [`PUSH_TO_GITHUB.bat`](file:///c:/Users/baslo/Desktop/KINGDOM%20GAME/66/%E2%80%8F%E2%80%8FKingdom_Guard0021/PUSH_TO_GITHUB.bat).
-2. سيقوم السكريبت برفع كافة الملفات والمجلدات تلقائياً إلى مستودعك: **`Joker055bf/KINGDOM-GAME`**.
-3. افتح صفحة الـ Actions للتحميل:
-   👉 **https://github.com/Joker055bf/KINGDOM-GAME/actions**
+1. اضغط مرتين على الملف: [`BUILD_FULL_GAME_LOCAL.bat`](file:///c:/Users/baslo/Desktop/KINGDOM%20GAME/66/%E2%80%8F%E2%80%8FKingdom_Guard0021/BUILD_FULL_GAME_LOCAL.bat).
+2. سيقوم السكريبت تلقائياً بـ:
+   - العثور على `apktool.jar` وتخصيص 4 جيجابايت من الذاكرة (RAM).
+   - تجميع كافة ملفات الـ Smali (المجلدات من `smali` إلى `smali_classes7`).
+   - إنشاء ملف الـ APK وتوقيعه تلقائياً بمفتاح تصحيح (`debug.keystore`).
+   - إخراج ملف التثبيت النهائي: **`Kingdom_Guard_Signed.apk`**.
 
 ---
 
-## 🌐 الخيار الثاني: الرفع اليدوي عبر المتصفح
+## 🚀 الخيار الثاني: الرفع التلقائي إلى GitHub والبناء السحابي
 
-1. اطلب صفحة مستودعك: [https://github.com/Joker055bf/KINGDOM-GAME](https://github.com/Joker055bf/KINGDOM-GAME)
-2. اضغط على زر **`Add file`** ثم **`Upload files`**.
-3. حدد جميع الملفات والمجلدات في هذا المسار وقوم بسحبها وإفلاتها داخل الصفحة:
-   `C:\Users\baslo\Desktop\KINGDOM GAME\66\Kingdom_Guard0021`
-4. اضغط على زر **`Commit changes`**.
-5. سيقوم GitHub تلقائياً ببدء بناء الـ APK وتوفير رابط التحميل تحت تبويب **Actions**.
+1. اضغط مرتين على الملف [`PUSH_TO_GITHUB.bat`](file:///c:/Users/baslo/Desktop/KINGDOM%20GAME/66/%E2%80%8F%E2%80%8FKingdom_Guard0021/PUSH_TO_GITHUB.bat).
+2. سيقوم السكريبت برفع كافة الملفات وتتبع الملفات الكبيرة (Git LFS) تلقائياً إلى مستودعك: **`Joker055bf/KINGDOM-GAME`**.
+3. ادخل على صفحة الـ Actions لتحميل ملف الـ APK الجاهز والموقع فور اكتمال البناء:
+   👉 **https://github.com/Joker055bf/KINGDOM-GAME/actions**

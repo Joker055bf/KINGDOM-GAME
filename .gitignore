@@ -1,0 +1,11 @@
+# Local build outputs
+out/
+dist/
+*.apk
+debug.keystore
+
+# Local tooling wrappers
+powershell.cmd
+
+# IDE
+.idea/deploymentTargetSelector.xml
